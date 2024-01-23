@@ -1,0 +1,31 @@
+.indiaMap{
+    width: 100% !important;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.indiaMap .wrapper{
+    text-align: -webkit-center;
+}
+
+.indiaHeading{
+    line-height: 1.6;
+    width: 45%;
+}
+
+.indiaHeading span{
+    color: #ff4500;
+}
+
+.indiaHeading h2{
+    font-size: 36px;
+}
+
+.indiaMap #visualization{
+    width: 100% !important;
+}
+
+.indiaMap #visualization div{
+    width: 100% !important;
+    text-align: center;
+}

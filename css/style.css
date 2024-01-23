@@ -1,0 +1,602 @@
+/* universal start here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* wrapper start here */
+.wrapper {
+  max-width: 1919px;
+  margin: 0 auto;
+  width: 91%;
+}
+
+/* similar tags */
+figure {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header start here=================== */
+header {
+  padding: 30px 0;
+  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar {
+  background-color: #000;
+  width: 44.7% !important;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  justify-content: left;
+
+  transition: visibility 0.3s, opacity 0.3s;
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active .navbar {
+  visibility: visible;
+  opacity: 1;
+}
+
+.active .headerBtn .headerBtnIcon[name="close"] {
+  display: block;
+}
+
+.active .headerBtn .headerBtnIcon[name="menu"],
+.active .headerBtn .headerBtnIcon[name="mail"],
+.active .headerBtn .headerBtnIcon[name="search"],
+.active .headerBtn .headerBtnIcon[name="share"] {
+  display: none;
+}
+
+header .navbar ul {
+  margin: 18% 20%;
+
+
+}
+
+header .navbar li {
+  padding: 14px;
+
+
+}
+
+header .navbar a {
+  color: #fff;
+  font-size: 40px;
+}
+
+header .navbar a::before {
+  content: "+";
+  color: #ff0000;
+  font-size: 30px;
+  padding-right: 25px;
+}
+
+
+.headerBtn {
+  color: #87ceeb;
+  width: 10.8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerBtnIcon {
+  border: 1px solid #87ceeb;
+  font-size: 50px;
+  padding: 14px 17px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.headerBtn .headerBtnIcon[name="close"] {
+  display: none;
+}
+
+/* header end here=================== */
+
+/* main start here */
+/* banner section start here */
+#myVideo {
+  width: 100%;
+}
+
+.banner .sideBtn {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.banner .sideBtn a {
+  padding: 10px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.banner .sideBtn #enrollNow {
+  background-color: #87ceeb;
+}
+
+.banner .sideBtn #requestCallback {
+  background-color: #8b008b;
+}
+
+/* banner section end here */
+/* main end here */
+
+/* footer start here======================= */
+footer {
+  color: #fff;
+  background-color: #00004d;
+  padding: 75px 55px;
+  position: relative;
+}
+
+footer a {
+  color: #fff;
+
+}
+
+.upperFooter .companyInfo {
+  width: 63.7%;
+  margin-left: auto;
+}
+
+.upperFooter .companyInfo,
+.upperFooter .shmStore .socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upperFooter .shmStore {
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  padding: 55px 40px 35px;
+  width: 25%;
+  position: absolute;
+  top: -13%;
+  border-radius: 20px 80px 20px 20px;
+}
+
+.upperFooter .shmStore figure {
+  justify-content: center;
+  padding-bottom: 43px;
+  border-bottom: 9px solid #ff4500;
+}
+
+.upperFooter .shmStore img {
+  width: 85%;
+}
+
+.upperFooter .shmStore figcaption {
+  padding: 33px 0;
+  color: #00008b;
+  line-height: 1.5;
+}
+
+
+.upperFooter .shmStore .socialMedia {
+  justify-content: space-around;
+  padding: 11px 0;
+}
+
+.upperFooter .shmStore .socialMedia a {
+  color: #ff4500;
+  text-indent: -9999px !important;
+  display: flex;
+}
+
+.upperFooter .shmStore .socialMedia a::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  border: 2px solid #ff4500;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.upperFooter .shmStore .socialMedia #facebook::before {
+  content: "\f09a";
+}
+
+.upperFooter .shmStore .socialMedia #twitter::before {
+  content: "\f099";
+}
+
+.upperFooter .shmStore .socialMedia #linkdin::before {
+  content: "\f0e1";
+}
+
+.upperFooter .shmStore .socialMedia #youtube::before {
+  content: "\f16a";
+}
+
+
+.upperFooter h3 {
+  font-size: 30px;
+}
+
+
+.companyContact a::before {
+  font-family: "fontAwesome";
+  padding-right: 20px;
+  color: #ff4500;
+}
+
+.companyContact #callUs::before {
+  content: "\f095";
+}
+
+.companyContact #mailUs::before {
+  content: "\f0e0";
+}
+
+.companyContact #address::before {
+  content: "\f041";
+}
+
+.lowerFooter .copyright,
+.lowerFooter .copyright .links,
+.lowerFooter .faq {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+.lowerFooter .faq {
+  padding: 65px 0;
+}
+
+.lowerFooter .pleaseSubscribe form {
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lowerFooter .pleaseSubscribe p {
+  padding-bottom: 35px;
+  font-size: 30px;
+}
+
+.lowerFooter .faq .pleaseSubscribe #submit {
+  background-color: #ff4500;
+  margin: 2px;
+
+}
+
+.lowerFooter .faq .pleaseSubscribe #email {
+  background-color: transparent;
+}
+
+.lowerFooter .faq .pleaseSubscribe #email,
+.lowerFooter .faq .pleaseSubscribe #submit {
+  border: transparent;
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.lowerFooter .faq h3 {
+  font-size: 30px;
+}
+
+.lowerFooter .faq #customerSupport {
+  padding: 10px 0 25px;
+}
+
+.lowerFooter .faq #callUs {
+  font-size: 35px;
+}
+
+.lowerFooter .copyright .links {
+  width: 28%;
+}
+
+/* sectionwhatsapp=============== */
+.whatsapp {
+  background-color: #ff4500;
+  color: #fff;
+  text-align: center;
+  padding: 75px 250px;
+}
+
+.whatsapp .wrapper {
+  line-height: 1.6;
+}
+
+.whatsapp p {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.whatsapp a {
+  background-color: #fff;
+  color: #ff4500;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.whatsapp a:after {
+  content: "\f232";
+  font-family: "fontAwesome";
+  color: #008000;
+  border-radius: 50%;
+  padding-left: 20px;
+}
+
+/* footer end here======================= */
+
+/* responsive start here======================= */
+@media only screen and (max-width: 1366px) {
+
+  header .navbar {
+    width: 60% !important;
+  }
+
+  header .logo {
+    text-align: center;
+  }
+
+  header #logo {
+    width: 70%;
+  }
+
+  header {
+    padding: 16px 0;
+  }
+
+  .headerBtnIcon {
+    padding: 4px;
+  }
+
+
+
+
+
+  footer {
+    padding: 55px 40px;
+  }
+
+  .upperFooter .companyInfo {
+    padding: 20px 0 30px;
+  }
+
+  .upperFooter .companyInfo ul {
+    flex-basis: 53%;
+    line-height: 2.5;
+  }
+
+  .upperFooter .companyInfo li a {
+    font-size: 15px;
+  }
+
+  .upperFooter .companyInfo h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .lowerFooter .copyright,
+  .lowerFooter .copyright .links,
+  .lowerFooter .faq {
+    font-size: 15px;
+  }
+
+  .lowerFooter .copyright .links {
+    width: 27%;
+  }
+
+  .lowerFooter .faq {
+    padding: 43px 0;
+  }
+
+
+  .lowerFooter .faq .pleaseSubscribe #email,
+  .lowerFooter .faq .pleaseSubscribe #submit {
+    padding: 12px 27px;
+    font-size: 15px;
+  }
+
+  .lowerFooter .faq h3 {
+    font-size: 24px;
+    padding-bottom: 6px;
+  }
+
+  .lowerFooter .faq #customerSupport {
+    padding: 0 0 19px 0;
+  }
+
+  .lowerFooter .faq #callUs {
+    font-size: 26px;
+  }
+
+  .lowerFooter .pleaseSubscribe {
+    width: 37.5%;
+  }
+
+  .lowerFooter .pleaseSubscribe p {
+    padding: 0 0 25px 4px;
+    font-size: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 1115px) {
+  header .navbar {
+    width: 100% !important;
+  }
+
+  .indiaHeading {
+    width: 100% !important;
+  }
+
+  .headerBtn {
+    width: 15%;
+  }
+
+  .whatsapp {
+    background-color: #ff4500;
+    color: #fff;
+    text-align: center;
+    padding: 75px 0;
+  }
+
+  form {
+    border: 1px solid transparent !important;
+  }
+
+  #email {
+    border: 1px solid #aaa !important;
+  }
+
+  .lowerFooter .pleaseSubscribe {
+    width: 50%;
+  }
+
+  .lowerFooter .faq,
+  .lowerFooter .copyright {
+    line-height: 2;
+    display: block;
+    text-align: -webkit-center;
+  }
+
+  .lowerFooter .copyright .links {
+    width: 40%;
+  }
+}
+
+
+@media only screen and (max-width: 995px) {
+  header #logo {
+    width: 70%;
+  }
+
+  .headerBtnIcon {
+    font-size: 30px;
+  }
+
+  .upperFooter .shmStore {
+    width: 50%;
+    position: static;
+  }
+
+  .upperFooter .companyInfo {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner .sideBtn {
+
+    top: 70%;
+  }
+
+  header .navbar a {
+    font-size: 20px;
+  }
+
+  .headerBtn {
+    width: 30%;
+  }
+
+  .upperFooter .shmStore {
+    width: 100%;
+  }
+
+  .lowerFooter .copyright .links,
+  .lowerFooter .pleaseSubscribe {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .indiaHeading h2 {
+    font-size: 20px !important;
+  }
+
+  .headerBtn {
+    width: 50%;
+  }
+
+  .headerBtnIcon {
+    font-size: 20px;
+  }
+
+  .lowerFooter .faq #callUs {
+    font-size: 20px;
+  }
+
+  .lowerFooter .copyright .links,
+  .lowerFooter .pleaseSubscribe form,
+  .upperFooter .companyInfo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .navbar ul {
+    margin: 18% 10% !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .whatsapp p {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .upperFooter .shmStore {
+    padding: 20px !important;
+  }
+
+  .upperFooter .shmStore .socialMedia a::before {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .upperFooter .shmStore figure {
+    padding-bottom: 10px;
+  }
+
+  .upperFooter .shmStore figcaption {
+    font-size: 15px;
+
+  }
+}
+
+/* responsive end here======================= */
